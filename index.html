@@ -44,6 +44,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#proyectos">Proyectos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto-form">Contacto</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -164,23 +167,41 @@
                 <li><strong>Francés:</strong> Nivel Intermedio</li>
               </ul>
             </section>
-
-            <section class="mb-4">
-              <h2 class="h4 border-bottom pb-2">Contacto</h2>
-              <p class="mb-1">
-                Email:
-                <a href="mailto:gonzalezgomezjuanjo3@gmail.com">gonzalezgomezjuanjo3@gmail.com</a>
-              </p>
-            </section>
           </div>
         </div>
-
+        
+        <section id="contacto-form" class="mt-5 p-4 bg-white shadow-sm rounded">
+          <h2 class="h3 border-bottom pb-2 mb-4">📩 Contacta Conmigo</h2>
+          
+          <form name="contacto" method="POST" data-netlify="true" class="row g-3">
+            
+            <input type="hidden" name="form-name" value="contacto" />
+            
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            
+            <div class="col-12">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </div>
+            
+          </form>
+        </section>
         <section class="mt-5">
           <div class="small text-muted">
-              <!-- BUILD_INFO -->
-<p>Build: 2025-12-15T18:03:17Z - SHA: 26b9809860235bbe59e7af83e2f4c68ce5e933cd - Image: ghcr.io/mechaes/mi-paginaweb-app:26b9809860235bbe59e7af83e2f4c68ce5e933cd</p>
-<!-- END_BUILD_INFO -->
-            </div>
+              <p>Build: 2025-12-15T18:03:17Z - SHA: 26b9809860235bbe59e7af83e2f4c68ce5e933cd - Image: ghcr.io/mechaes/mi-paginaweb-app:26b9809860235bbe59e7af83e2f4c68ce5e933cd</p>
+</div>
         </section>
       </div>
     </main>
