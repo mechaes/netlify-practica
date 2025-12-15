@@ -6,8 +6,8 @@ on:
       - main
 
 permissions:
-  contents: write   # necesario para hacer commit en el repo
-  packages: write   # para publicar en GHCR
+  contents: write
+  packages: write
   id-token: write   # si usas OIDC con ghcr (opcional)
 
 jobs:
@@ -86,3 +86,4 @@ jobs:
           author_name: github-actions[bot]
           author_email: 41898282+github-actions[bot]@users.noreply.github.com
           # By default this action uses GITHUB_TOKEN so it won't re-trigger this workflow
+
